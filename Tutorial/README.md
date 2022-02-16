@@ -112,7 +112,7 @@ read -p "Yes/No?:" Answer
 - Functions
 
 
-A Bash function is essentially a set of commands that can be called numerous times. 
+   A Bash function is essentially a set of commands that can be called numerous times. 
 
 ```
 Examples
@@ -131,7 +131,7 @@ print_something Jupiter
 
 
 
-A 'for loop' is a bash programming language statement which allows code to be repeatedly executed. 
+   A 'for loop' is a bash programming language statement which allows code to be repeatedly executed. 
 
 ```
 for (( c=1; c<=5; c++ ))
