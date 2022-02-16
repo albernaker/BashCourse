@@ -117,6 +117,7 @@ A Bash function is essentially a set of commands that can be called numerous tim
 ```
 Examples
 ```
+```
 print_something () {
 echo Hello $1
 }
