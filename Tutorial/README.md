@@ -20,7 +20,7 @@ If you want to create a script you have to writh in shell, vim (or ur favorite e
 
 When you are editing the script you have to say that you're scripting in bash so you have to write before your script
 
-```bash
+```python
 - #!/bin/bash
 ```
 Now you can start programing your code to hack NASA!!
