@@ -1,0 +1,78 @@
+https://ss64.com/bash/syntax.html
+
+Recordatori sobre els parametres a bash
+
+    $0: Contiene el nombre del script tal como es invocado.
+    $*: El conjunto de todos los parámetros en un solo argumento.
+    $@: El conjunto de argumentos, un argumento por parámetro.
+    $#: El número de parámetros pasados al script.
+    $?: El código de retorno del último comando.
+    $$: El PID del shell que ejecuta el script.
+    $! : El PID del último proceso ejecutado en segundo plano.
+
+
+
+
+IF SYNTAX
+
+Syntax	What it is	When to use
+
+if ( <commands> )	Subshell executed in a subprocess.	When the commands affect the current shell or environment. The changes do not remain when the subshell completes.
+if (( <commands> ))	Bash extension.	Use for arithmetic operations and C-style variable manipulation.
+if [ <commands> ]	POSIX builtin, alias for test <commands>.	Comparing numbers and testing whether a file exists.
+if [[ <commands> ]]	Bash extension, an advanced version of single square brackets.	String matching a wildcard pattern.
+
+
+
+SWITCH OR CASE SYNTAX
+
+case EXPRESSION in
+
+  PATTERN_1)
+    STATEMENTS
+    ;;
+
+  PATTERN_2)
+    STATEMENTS
+    ;;
+
+  PATTERN_N)
+    STATEMENTS
+    ;;
+
+  *)
+    STATEMENTS    ;;
+esac
+
+
+FUNCTION SYNTAX
+
+print_something () {
+echo Hello $1
+}
+print_something Mars
+print_something Jupiter
+
+
+
+FOR SYNTAX
+
+for (( c=1; c<=5; c++ ))
+do  
+   echo "Welcome $c times"
+done
+
+
+for VARIABLE in file1 file2 file3
+do
+	command1 on $VARIABLE
+	command2
+	commandN
+done
+
+
+
+WHILE SYNTAX
+
+while [ condition ]; do commands; done
+while control-command; do COMMANDS; done
