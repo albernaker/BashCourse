@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 echo "Do you want to read a file or write?"
 read ans
 	case $ans in
