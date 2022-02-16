@@ -2,14 +2,14 @@
 [TOC]
 
 # 1. Introduction
-```
+
 Hello user! I'm here to talk about my bash course, here i will explain some scripts to learn about bash.
 
-```
+
 
 # 2. Execute an scripting
 
-```
+
 First of all, i have to tell you how to create and execute a script in shell.
 
 If you want to create a script you have to writh in shell, vim (or ur favorite editor) and the name of the script and ".sh" to give it the extension
@@ -19,13 +19,12 @@ If you want to create a script you have to writh in shell, vim (or ur favorite e
 ```
 
 When you are editing the script you have to say that you're scripting in bash so you have to write before your script
-```
-- #!/bin/bash
 
+```bash
+- #!/bin/bash
 ```
 Now you can start programing your code to hack NASA!!
 
-```
 
 
 # 2. Syntax and Examples
