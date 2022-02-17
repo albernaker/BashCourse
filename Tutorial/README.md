@@ -171,3 +171,9 @@ print_something Jupiter
 # 5. References
         https://www.pluralsight.com/courses/bash-shell-scripting?aid=7010a000002BWqGAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=EMEA_Dynamic&utm_content=&gclid=EAIaIQobChMIipadp_709QIVweJ3Ch2yfQziEAAYASAAEgKnmvD_BwE
         https://www.udemy.com/course/bash-scripting/
+        https://www.linux.com/training-tutorials/writing-simple-bash-script/
+        https://bioinf.comav.upv.es/courses/unix/scripts_bash.html
+        https://linuxconfig.org/bash-scripting-tutorial-for-beginners
+        https://www.hostinger.es/tutoriales/bash-script-linux
+        https://www.linux.com/training-tutorials/writing-simple-bash-script/
+        
