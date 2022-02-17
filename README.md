@@ -74,12 +74,12 @@ B=$(($A * 3 + 1))
 
 # 2.2. Functions
 
-```
+
 A Bash function is essentially a set of commands that can be called numerous times. 
-```
+
 Examples
 
-```
+
 print_something () {
 echo Hello $1
 }
