@@ -7,7 +7,7 @@ Hello user! I'm here to talk about my bash course, here i will explain some scri
 
 
 
-# 2. Execute an scripting
+# 2. How to execute a scripting
 
 
 First of all, i have to tell you how to create and execute a script in shell.
