@@ -79,13 +79,13 @@ A Bash function is essentially a set of commands that can be called numerous tim
 
 Examples
 
-
+```
 print_something () {
 echo Hello $1
 }
 print_something Mars
 print_something Jupiter
-
+```
 
 
 # 2.3. Flow control (if/for/case)
@@ -112,15 +112,16 @@ print_something Jupiter
 
 # 2.3.3 For
 
-	```
+	
 	A 'for loop' is a bash programming language statement which allows code to be repeatedly executed.
 
+	```
 	for (( c=1; c<=5; c++ ))
 	do
 	   echo "Welcome $c times"
 	done
-
-
+```
+```
 	for VARIABLE in file1 file2 file3
 		do
        			command1 on $VARIABLE
@@ -129,9 +130,6 @@ print_something Jupiter
 		done
 
 ```
-Examples
-
-
 
 # 3. Examples
 
