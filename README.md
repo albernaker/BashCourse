@@ -7,7 +7,7 @@ Hello user! I'm here to talk about my bash course, here i will explain some scri
 
 
 
-# 2. How to execute a scripting
+# 2. Create a script
 
 
 First of all, i have to tell you how to create and execute a script in shell.
@@ -26,9 +26,24 @@ When you are editing the script you have to say that you're scripting in bash so
 Now you can start programing your code to hack NASA!!
 
 
+# 3. Execute a script
+
+Let's start talking about how to execute a script.
+
+What you have to do in the same folder (where you have located the script) and then write
+
+```
+- ./nameofthescript
+```
+if in the script have parameters like $1 $2... you can write them  next to the execution.
 
 
-# 2. Syntax and Examples
+```
+- ./nameofthescript 12 13
+
+```
+
+# 4. Syntax and Examples
 
  - Conditionals(If)
 
@@ -184,7 +199,7 @@ print_something Jupiter
 ```
 
 
-# 4. References
+# 5. References
 
         https://www.pluralsight.com/courses/bash-shell-scripting?aid=7010a000002BWqGAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=EMEA_Dynamic&utm_content=&gclid=EAIaIQobChMIipadp_709QIVweJ3Ch2yfQziEAAYASAAEgKnmvD_BwE
 
