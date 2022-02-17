@@ -1,6 +1,5 @@
 # Project Title
 
-
 # 1. Introduction
 
 Hello user! I'm here to talk about my bash course, here i will explain some scripts to learn about bash.
@@ -9,25 +8,85 @@ Hello user! I'm here to talk about my bash course, here i will explain some scri
 
 # 2.1. Variables
 
+The variables in bash are global by default and accessible from anywhere, including function bodies. Variables defined inside a function are also global. Adding the keyword local makes the term accessible only within the function and the child functions/processes.
+
+var1=1
+var2=1
+	change() {
+		echo Inside function
+		echo Variable 1 is: $var1
+		echo Variable 2 is: $var2
+		local var1=5
+		var2=5
+		echo
+		echo After change inside function
+		echo Variable 1 is locally $var1
+		echo Variable 2 is globally $var2
+	}
+
+	echo Before function invocation
+	echo Variable 1 is: $var1
+	echo Variable 2 is: $var2
+	echo
+	change
+	echo
+	echo After function invocation
+	echo Variable 1 is: $var1
+	echo Variable 2 is: $var2
+
+Add this to your code and see how it works!
+
 # 2.1.1. Parameters
 
-(main and function parameters)
+    $0 - Contains the name of the script as it is called.
+    $1...$2... - Contains the parameters that you have writed before execute program or introducing to a funciton
+    $*: The set of all parameters in a single argument.
+    $@: the array of arguments, one argument per parameter.
+    $#: The number of parameters passed to the script.
+    $?: The return code of the last command.
+    $$: The PID of the shell that runs the script.
+    PS: The PID of the last process executed in the background.
 
-# 2.1.2. Global variables
+f 1 2 3
 
-normal vars, arrays, assoc arrays
+f "1 1" "2 2" "3 3"
 
-# 2.1.3. Local variables
+f() {
+	local i
 
-like the above + e.g. how to declare a local associative array
+	echo "numparams: ${#@}"
 
-# 2.1.4. Arithmetic variable asignment
+	for i in $@ ; do
+		echo "p: $i"
+	done
+	echo "----"
+	for i in "$@" ; do
+		echo "p: $i"
+	done
+}
+
+
+# 2.1.2. Arithmetic variable asignment
 
 A=123
 B=$((A * 3 + 1))
 B=$(($A * 3 + 1))
 
 # 2.2. Functions
+
+```
+A Bash function is essentially a set of commands that can be called numerous times. 
+```
+Examples
+
+```
+print_something () {
+echo Hello $1
+}
+print_something Mars
+print_something Jupiter
+
+
 
 # 2.3. Flow control (if/for/case)
 
@@ -50,6 +109,29 @@ B=$(($A * 3 + 1))
 	2) return 20 ;;
 	*) return 0 ;;
 	esac
+
+# 2.3.3 For
+
+	```
+	A 'for loop' is a bash programming language statement which allows code to be repeatedly executed.
+
+	for (( c=1; c<=5; c++ ))
+	do
+	   echo "Welcome $c times"
+	done
+
+
+	for VARIABLE in file1 file2 file3
+		do
+       			command1 on $VARIABLE
+       			command2
+       			commandN
+		done
+
+```
+Examples
+
+
 
 # 3. Examples
 
@@ -74,18 +156,13 @@ Now you can start programing your code to hack NASA!!
 
 
 
-# 3.2. Syntax and Examples
+# 3.2. Examples
 
  - Conditionals(If)
 
 ```
 Syntax  What it is    When to use
 
-if ( <commands> )     Subshell executed in a subprocess.      When the commands affect the current shell or environment. The changes do not remain when the subshell completes.
-if (( <commands> ))   Bash extension. Use for arithmetic operations and C-style variable manipulation.
-if [ <commands> ]     POSIX builtin, alias for test <commands>.       Comparing numbers and testing whether a file exists.
-if [[ <commands> ]]   Bash extension, an advanced version of single square brackets.  String matching a wildcard pattern.
-```
 Examples
 
 ```
@@ -115,26 +192,7 @@ result=$(( A + B + 0))
 
 
 
-- Switch or Case Syntax(case)
-
-```
-case EXPRESSION in
-
-  PATTERN_1)
-    STATEMENTS
-    ;;
-
-  PATTERN_2)
-    STATEMENTS
-    ;;
-
-  PATTERN_N)
-    STATEMENTS
-    ;;
-
-  *)
-    STATEMENTS    ;;
-esac
+- Switch or Case
 
 ```
 Examples
@@ -156,51 +214,23 @@ read -p "Yes/No?:" Answer
 
 ```
 
-- Functions
-
-```
-A Bash function is essentially a set of commands that can be called numerous times. 
-```
-Examples
-
-```
-print_something () {
-echo Hello $1
-}
-print_something Mars
-print_something Jupiter
-
-
-```
-
 - For Syntax
 
-
-```
-A 'for loop' is a bash programming language statement which allows code to be repeatedly executed. 
-
-for (( c=1; c<=5; c++ ))
-do
-   echo "Welcome $c times"
-done
-
-
-for VARIABLE in file1 file2 file3
-do
-        command1 on $VARIABLE
-        command2
-        commandN
-done
-
 ```
 Examples
 
 ```
-print_something () {
-echo Hello $1
-}
-print_something Mars
-print_something Jupiter
+for i in {1..5}
+do
+   echo "Welcome $i times"
+done
+
+diferent example
+
+for (( c=1; c<=5; c++ ))
+do  
+   echo "Welcome $c times"
+done
 
 
 ```
@@ -233,7 +263,6 @@ print_something Jupiter
 # 4. References
 
         https://www.pluralsight.com/courses/bash-shell-scripting?aid=7010a000002BWqGAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=EMEA_Dynamic&utm_content=&gclid=EAIaIQobChMIipadp_709QIVweJ3Ch2yfQziEAAYASAAEgKnmvD_BwE
-
         https://www.udemy.com/course/bash-scripting/
         https://www.linux.com/training-tutorials/writing-simple-bash-script/
         https://bioinf.comav.upv.es/courses/unix/scripts_bash.html
