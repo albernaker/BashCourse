@@ -12,27 +12,27 @@ The variables in bash are global by default and accessible from anywhere, includ
 
 var1=1
 var2=1
-	change() {
-		echo Inside function
-		echo Variable 1 is: $var1
-		echo Variable 2 is: $var2
-		local var1=5
-		var2=5
-		echo
-		echo After change inside function
-		echo Variable 1 is locally $var1
-		echo Variable 2 is globally $var2
-	}
+        change() {
+                echo Inside function
+                echo Variable 1 is: $var1
+                echo Variable 2 is: $var2
+                local var1=5
+                var2=5
+                echo
+                echo After change inside function
+                echo Variable 1 is locally $var1
+                echo Variable 2 is globally $var2
+        }
 
-	echo Before function invocation
-	echo Variable 1 is: $var1
-	echo Variable 2 is: $var2
-	echo
-	change
-	echo
-	echo After function invocation
-	echo Variable 1 is: $var1
-	echo Variable 2 is: $var2
+        echo Before function invocation
+        echo Variable 1 is: $var1
+        echo Variable 2 is: $var2
+        echo
+        change
+        echo
+        echo After function invocation
+        echo Variable 1 is: $var1
+        echo Variable 2 is: $var2
 
 Add this to your code and see how it works!
 
@@ -52,17 +52,17 @@ f 1 2 3
 f "1 1" "2 2" "3 3"
 
 f() {
-	local i
+        local i
 
-	echo "numparams: ${#@}"
+        echo "numparams: ${#@}"
 
-	for i in $@ ; do
-		echo "p: $i"
-	done
-	echo "----"
-	for i in "$@" ; do
-		echo "p: $i"
-	done
+        for i in $@ ; do
+                echo "p: $i"
+        done
+        echo "----"
+        for i in "$@" ; do
+                echo "p: $i"
+        done
 }
 
 
@@ -75,7 +75,7 @@ B=$(($A * 3 + 1))
 # 2.2. Functions
 
 
-A Bash function is essentially a set of commands that can be called numerous times. 
+A Bash function is essentially a set of commands that can be called numerous times.
 
 Examples
 
@@ -89,47 +89,44 @@ print_something Jupiter
 
 
 # 2.3. Flow control (if/for/case)
-
 # 2.3.1. If
 
-	if command ; then ; command(s) ; fi
-	if [ condition ] ; then ; command(s) ; fi
-	if [[ condition/s ]] ; then ; command(s) ; fi
-	if (( condition/s )) ; then ; command(s) ; fi
+        if command ; then ; command(s) ; fi
+        if [ condition ] ; then ; command(s) ; fi
+        if [[ condition/s ]] ; then ; command(s) ; fi
+        if (( condition/s )) ; then ; command(s) ; fi
 
 # 2.3.x. Case
-	switch (c) {
-	case 1: return 10;
-	case 2: return 20;
-	default: return 0;
-	}
+        switch (c) {
+        case 1: return 10;
+        case 2: return 20;
+        default: return 0;
+        }
 
-	case in $c
-	1) return 10 ;;
-	2) return 20 ;;
-	*) return 0 ;;
-	esac
+        case in $c
+        1) return 10 ;;
+        2) return 20 ;;
+        *) return 0 ;;
+        esac
 
 # 2.3.3 For
 
-	
-	A 'for loop' is a bash programming language statement which allows code to be repeatedly executed.
 
-	```
-	for (( c=1; c<=5; c++ ))
-	do
-	   echo "Welcome $c times"
-	done
-```
-```
-	for VARIABLE in file1 file2 file3
-		do
-       			command1 on $VARIABLE
-       			command2
-       			commandN
-		done
+ A 'for loop' is a bash programming language statement which allows code to be repeatedly executed.
 
-```
+        ```
+        for (( c=1; c<=5; c++ ))
+        do
+           echo "Welcome $c times"
+        done
+
+        for VARIABLE in file1 file2 file3
+                do
+                        command1 on $VARIABLE
+                        command2
+                        commandN
+                done
+        ```                
 
 # 3. Examples
 
@@ -169,12 +166,11 @@ B=3
 
 result=$(( A + B + 0))
 
-        if [ $result =  0 ]
+      if [ $result =  0 ]
         then
         echo "Result A + B equals 0"
 
-
-        elif [ $result < 10 ]
+               elif [ $result < 10 ]
         then
                 echo "Result is less than 10  = $result"
 
@@ -182,17 +178,15 @@ result=$(( A + B + 0))
         elif [ $result > 10 ]
         then
                 echo "Result is greater than 10 =  $result"
-        fi
-    
-    RESULT:
-    Returns echo " Result is less than 10 = 5 "
-```
+           fi
+ RESULT:
+ Returns echo " Result is less than 10 = 5 "
+``
+
+# Switch or Case
 
 
 
-- Switch or Case
-
-```
 Examples
 
 ```
@@ -222,15 +216,9 @@ for i in {1..5}
 do
    echo "Welcome $i times"
 done
-
-diferent example
-
-for (( c=1; c<=5; c++ ))
-do  
-   echo "Welcome $c times"
-done
-
-
+            
+            
+            
 ```
 - Arrays
 
@@ -267,5 +255,4 @@ done
         https://linuxconfig.org/bash-scripting-tutorial-for-beginners
         https://www.hostinger.es/tutoriales/bash-script-linux
         https://www.linux.com/training-tutorials/writing-simple-bash-script/
-
-
+                    
