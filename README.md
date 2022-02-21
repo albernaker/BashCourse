@@ -152,7 +152,6 @@ Now you can start programing your code to hack NASA!!
 
 
 
-
 # 3.2. Examples
 
  - Conditionals(If)
@@ -207,7 +206,6 @@ read -p "Yes/No?:" Answer
         esac
 
 ```
-
 - For Syntax
 
 ```
@@ -220,12 +218,11 @@ do
 done
             
             
-            
-```
 - Arrays
 
 ```
    A[3]=hola
+
 ```
 
 - Associative arrays
@@ -243,8 +240,6 @@ done
    echo "B has ${#B[@]} elements: ${!B[@]}"
 
     for i in ${!B[@]} ; do echo $i ; done
-```
-
 ```
 
 
