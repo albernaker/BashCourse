@@ -244,8 +244,38 @@ read -p "Yes/No?:" Answer
     for i in ${!B[@]} ; do echo $i ; done
 ```
 
+# 4. One liners
 
-# 4. References
+# 4.1.
+
+	Research all files in a folder in one line 
+
+# 4.2.
+	example.
+
+```
+	ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
+```
+
+# 5. Examples
+
+Tutorial/arrays.sh
+Tutorial/compareStrings.sh
+Tutorial/Fifth.sh
+Tutorial/filename.sh
+Tutorial/FourthStep.sh
+Tutorial/Introduction.sh
+Tutorial/MyFunction.sh
+Tutorial/OpenAURL.sh
+Tutorial/README.md
+Tutorial/SecondStep.sh
+Tutorial/seventh.sh
+Tutorial/sixth.sh
+Tutorial/switch.sh
+Tutorial/ThirdStep.sh
+
+
+# 6. References
 
         https://www.pluralsight.com/courses/bash-shell-scripting?aid=7010a000002BWqGAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=EMEA_Dynamic&utm_content=&gclid=EAIaIQobChMIipadp_709QIVweJ3Ch2yfQziEAAYASAAEgKnmvD_BwE
         https://www.udemy.com/course/bash-scripting/
