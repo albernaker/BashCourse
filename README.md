@@ -155,7 +155,7 @@ Now you can start programing your code to hack NASA!!
 
 # 3.2. Examples
 
- - Conditionals(If)
+ #Conditionals(If)
 
 
 Syntax  What it is    When to use
