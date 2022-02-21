@@ -10,9 +10,9 @@ Hello user! I'm here to talk about my bash course, here i will explain some scri
 
 The variables in bash are global by default and accessible from anywhere, including function bodies. Variables defined inside a function are also global. Adding the keyword local makes the term accessible only within the function and the child functions/processes.
 
-var1=1
-var2=1
-        change() {
+		var1=1
+		var2=1
+	        change() {
                 echo Inside function
                 echo Variable 1 is: $var1
                 echo Variable 2 is: $var2
@@ -46,12 +46,12 @@ Add this to your code and see how it works!
     $?: The return code of the last command.
     $$: The PID of the shell that runs the script.
     PS: The PID of the last process executed in the background.
+´´´
+	f 1 2 3
 
-f 1 2 3
+	f "1 1" "2 2" "3 3"
 
-f "1 1" "2 2" "3 3"
-
-f() {
+	f() {
         local i
 
         echo "numparams: ${#@}"
@@ -64,7 +64,7 @@ f() {
                 echo "p: $i"
         done
 }
-
+```
 
 # 2.1.2. Arithmetic variable asignment
 ```
@@ -206,15 +206,15 @@ read -p "Yes/No?:" Answer
 ```
 
 - For Syntax
+```
+
+ Examples
 
 ```
-Examples
-
-```
-for i in {1..5}
-do
-   echo "Welcome $i times"
-done
+	for i in {1..5}
+	do
+   		echo "Welcome $i times"
+	done
 ```         
             
 - Arrays
@@ -225,6 +225,7 @@ done
 ```
 
 - Associative arrays
+
 ```
    declare -A B
    B[hola]=3
