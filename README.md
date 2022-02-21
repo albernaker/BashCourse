@@ -207,7 +207,7 @@ read -p "Yes/No?:" Answer
 ```
 
 - For Syntax
-```
+
 
  Examples
 
@@ -219,6 +219,7 @@ read -p "Yes/No?:" Answer
 ```         
             
 - Arrays
+
 
 ```
    A[3]=hola
