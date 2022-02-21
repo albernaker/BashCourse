@@ -99,7 +99,7 @@ print_something Jupiter
         if [[ condition/s ]] ; then ; command(s) ; fi
         if (( condition/s )) ; then ; command(s) ; fi
 
-# 2.3.x. Case
+# 2.3.22 Case
         switch (c) {
         case 1: return 10;
         case 2: return 20;
