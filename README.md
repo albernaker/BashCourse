@@ -67,10 +67,12 @@ f() {
 
 
 # 2.1.2. Arithmetic variable asignment
-
+```
 A=123
 B=$((A * 3 + 1))
 B=$(($A * 3 + 1))
+```
+
 
 # 2.2. Functions
 
@@ -155,7 +157,7 @@ Now you can start programing your code to hack NASA!!
 
  - Conditionals(If)
 
-```
+
 Syntax  What it is    When to use
 
 Examples
@@ -181,7 +183,7 @@ result=$(( A + B + 0))
            fi
  RESULT:
  Returns echo " Result is less than 10 = 5 "
-``
+```
 
 # Switch or Case
 
