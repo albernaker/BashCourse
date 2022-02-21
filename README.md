@@ -38,14 +38,14 @@ Add this to your code and see how it works!
 
 # 2.1.1. Parameters
 
-$0 - Contains the name of the script as it is called.
-$1...$2... - Contains the parameters that you have writed before execute program or introducing to a funciton
-$*: The set of all parameters in a single argument.
-$@: the array of arguments, one argument per parameter.
-$#: The number of parameters passed to the script.
-$?: The return code of the last command.
-$$: The PID of the shell that runs the script.
-PS: The PID of the last process executed in the background.
+	$0 - Contains the name of the script as it is called.
+	$1...$2... - Contains the parameters that you have writed before execute program or introducing to a funciton
+	$*: The set of all parameters in a single argument.
+	$@: the array of arguments, one argument per parameter.
+	$#: The number of parameters passed to the script.
+	$?: The return code of the last command.
+	$$: The PID of the shell that runs the script.
+	PS: The PID of the last process executed in the background.
 
 ```
 	f 1 2 3
