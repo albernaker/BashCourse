@@ -207,7 +207,7 @@ read -p "Yes/No?:" Answer
 ```
 
 - For Syntax
-```
+
 
  Examples
 
