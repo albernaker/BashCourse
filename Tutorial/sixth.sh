@@ -18,21 +18,14 @@ substract() {
        
 }
 
-	if [ $log = "+" ] 
-	then
-		add
-	elif [ $log = "-" ]
-	then
-		substract
-	
-	fi
+# main
 
-
-
-
-
-
-
-
+if [[ $log = "+" ]]
+then
+	add
+elif [[ $log = "-" ]]
+then
+	substract
+fi
 
 

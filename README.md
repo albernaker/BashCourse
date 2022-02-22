@@ -6,7 +6,7 @@ Hello user! I'm here to talk about my bash course, here i will explain some scri
 
 # 2. Bash notions
 
-# 2.1. Variables
+## 2.1. Variables
 
 The variables in bash are global by default and accessible from anywhere, including function bodies. Variables defined inside a function are also global. Adding the keyword local makes the term accessible only within the function and the child functions/processes.
 
@@ -36,7 +36,7 @@ The variables in bash are global by default and accessible from anywhere, includ
 
 Add this to your code and see how it works!
 
-# 2.1.1. Parameters
+### 2.1.1. Parameters
 
 	$0 - Contains the name of the script as it is called.
 	$1...$2... - Contains the parameters that you have writed before execute program or introducing to a funciton
@@ -67,7 +67,7 @@ Add this to your code and see how it works!
 }
 ```
 
-# 2.1.2. Arithmetic variable asignment
+### 2.1.2. Arithmetic variable asignment
 ```
 A=123
 B=$((A * 3 + 1))
@@ -75,7 +75,7 @@ B=$(($A * 3 + 1))
 ```
 
 
-# 2.2. Functions
+## 2.2. Functions
 
 
 A Bash function is essentially a set of commands that can be called numerous times.
@@ -91,15 +91,15 @@ print_something Jupiter
 ```
 
 
-# 2.3. Flow control (if/for/case)
-# 2.3.1. If
+## 2.3. Flow control (if/for/case)
+### 2.3.1. If
 
         if command ; then ; command(s) ; fi
         if [ condition ] ; then ; command(s) ; fi
         if [[ condition/s ]] ; then ; command(s) ; fi
         if (( condition/s )) ; then ; command(s) ; fi
 
-# 2.3.2 Case
+### 2.3.2 Case
         switch (c) {
         case 1: return 10;
         case 2: return 20;
@@ -112,7 +112,7 @@ print_something Jupiter
         *) return 0 ;;
         esac
 
-# 2.3.3 For
+### 2.3.3 For
 
 
  A 'for loop' is a bash programming language statement which allows code to be repeatedly executed.
@@ -133,7 +133,7 @@ print_something Jupiter
 
 # 3. Examples
 
-# 3.1. Execute a script
+## 3.1. Execute a script
 
 
 First of all, i have to tell you how to create and execute a script in shell.
@@ -153,9 +153,9 @@ Now you can start programing your code to hack NASA!!
 
 
 
-# 3.2. Examples
+## 3.2. Examples
 
-# Conditionals(If)
+### 3.2.1. Conditionals(If)
 
 
 Syntax  What it is    When to use
@@ -185,7 +185,7 @@ result=$(( A + B + 0))
  Returns echo " Result is less than 10 = 5 "
 ```
 
-# Switch or Case
+### 3.2.2. Switch or Case
 
 Examples
 
@@ -246,19 +246,21 @@ read -p "Yes/No?:" Answer
 
 # 4. One liners
 
-# 4.1.
+## 4.1.
 
 An eg. that we want to search all files on  a folder in one line. 
 
-# 4.2.
+## 4.2.
 
 example.
 
 ```
 	ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
 ```
+
+[compareStrings.sh](Tutorial/compareStrings.sh)
+
 ```
-Tutorial/arrays.sh
 Tutorial/compareStrings.sh
 Tutorial/Fifth.sh
 Tutorial/filename.sh
