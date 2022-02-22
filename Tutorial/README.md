@@ -21,8 +21,9 @@ When you are editing the script you have to say that you're scripting in bash so
 And that's how you can execute a script and now i think you're prepared to execute codes, understand , learn and upgrade that codes.
 
 # STEPS
- 	You should start learningg in order with the steps, and then you have to execute other codes. Other codes are important functions, variables, parametes and exercices that you can expand your bashscripting mind	
+You should start learningg in order with the steps, and then you have to execute other codes. Other codes are important functions, variables, parametes and exercices that you can expand your bashscripting mind	
 
-[SecondStep.sh](SecondStep.sh)
-[ThirdStep.sh](ThirdStep.sh)
+
+- [SecondStep.sh](SecondStep.sh)
+- [ThirdStep.sh](ThirdStep.sh)
 
