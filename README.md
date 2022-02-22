@@ -260,6 +260,7 @@ example.
 
 # 5. Examples
 
+```
 Tutorial/arrays.sh
 Tutorial/compareStrings.sh
 Tutorial/Fifth.sh
@@ -274,7 +275,7 @@ Tutorial/seventh.sh
 Tutorial/sixth.sh
 Tutorial/switch.sh
 Tutorial/ThirdStep.sh
-
+```
 
 # 6. References
 
