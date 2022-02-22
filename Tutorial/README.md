@@ -23,4 +23,14 @@ And that's how you can execute a script and now i think you're prepared to execu
 # STEPS
  	You should start learningg in order with the steps, and then you have to execute other codes. Other codes are important functions, variables, parametes and exercices that you can expand your bashscripting mind	
 
+[SecondStep.sh](Tutorial/SecondStep.sh)
+[ThirdStep.sh](Tutorial/ThirdStep.sh)
+[SecondStep.sh](Tutorial/SecondStep.sh)
+[SecondStep.sh](Tutorial/SecondStep.sh)
+[SecondStep.sh](Tutorial/SecondStep.sh)
+[SecondStep.sh](Tutorial/SecondStep.sh)
+[SecondStep.sh](Tutorial/SecondStep.sh)
+[SecondStep.sh](Tutorial/SecondStep.sh)
+[SecondStep.sh](Tutorial/SecondStep.sh)
+[SecondStep.sh](Tutorial/SecondStep.sh)
 
