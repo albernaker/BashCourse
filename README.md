@@ -257,9 +257,6 @@ example.
 ```
 	ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
 ```
-
-# 5. Examples
-
 ```
 Tutorial/arrays.sh
 Tutorial/compareStrings.sh
