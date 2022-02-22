@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/Bin/bash
 
 FILE=$1
 if [ -f $FILE ]
