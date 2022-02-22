@@ -248,10 +248,11 @@ read -p "Yes/No?:" Answer
 
 # 4.1.
 
-	Research all files in a folder in one line 
+An eg. that we want to search all files on  a folder in one line. 
 
 # 4.2.
-	example.
+
+example.
 
 ```
 	ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
