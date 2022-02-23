@@ -24,10 +24,30 @@ And that's how you can execute a script and now i think you're prepared to execu
 You should start learning in order with the steps, and then you have to execute other codes. Other codes are important functions, variables, parametes and exercices that you can expand your bashscripting mind	
 
 
+- [Introduction.sh](Introduction.sh)
+- [exercici.sh](exercici.sh)
+- [example1.sh](example1.sh)
+
+- [FirstStep.sh](FirstStep.sh)
 - [SecondStep.sh](SecondStep.sh)
 - [ThirdStep.sh](ThirdStep.sh)
 - [FourthStep.sh](FourthStep.sh)
-- [FifthStep.sh](FifthStep.sh)
-- [SecondStep.sh](SecondStep.sh)
-- [ThirdStep.sh](ThirdStep.sh)
+- [Fifth.sh](Fifth.sh)
+- [sixth.sh](sixth.sh)
+- [seventh.sh](seventh.sh)
+
+
+# Syntax
+
+- [arrays.sh](arrays.sh)
+- [compareStrings.sh](compareStrings.sh)
+- [exerciceParameters.sh](exerciceParameters.sh)
+- [filename.sh](filename.sh)
+- [isdirectory.sh](isdirectory.sh)
+- [MyFunction.sh](MyFunction.sh)
+- [RepasParameters.sh](RepasParameters.sh)
+- [switch.sh](switch.sh)
+
+
+
 
