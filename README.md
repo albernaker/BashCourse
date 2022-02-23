@@ -49,19 +49,19 @@ Add this to your code and see how it works!
 	PS: The PID of the last process executed in the background.
 
 ```
- f 1 2 3
- f "1 1" "2 2" "3 3"
-  f() {
-   local i
-     echo "numparams: ${#@}"
+f 1 2 3
+f "1 1" "2 2" "3 3"
+f() {
 
-	for i in $@ ; do
-		cho "p: $i"
-  	done
-   		echo "----"
- 	 for i in "$@" ; do
-	   echo "p: $i"
-	  done
+     local i
+     echo "numparams: ${#@}"
+     for i in $@ ; do
+	echo "p: $i"
+     done
+	echo "----"
+     for i in "$@" ; do
+	echo "p: $i"
+     done
 }
 ```
 
@@ -116,19 +116,19 @@ print_something Jupiter
 
  A 'for loop' is a bash programming language statement which allows code to be repeatedly executed.
 
-        ```
-        for (( c=1; c<=5; c++ ))
-        do
-           echo "Welcome $c times"
-        done
+```
+for (( c=1; c<=5; c++ ))
+do
+	echo "Welcome $c times"
+done
 
-        for VARIABLE in file1 file2 file3
-                do
-                        command1 on $VARIABLE
-                        command2
-                        commandN
-                done
-        ```                
+for VARIABLE in file1 file2 file3
+do
+	command1 on $VARIABLE
+	command2
+	commandN
+done
+```                
 
 # 3. Examples
 
@@ -169,14 +169,15 @@ result=$(( A + B + 0))
 
 if [ $result =  0 ]
 then
-echo "Result A + B equals 0"
+	echo "Result A + B equals 0"
 elif [ $result < 10 ]
 then
-echo "Result is less than 10  = $result"
+	echo "Result is less than 10  = $result"
 elif [ $result > 10 ]
 then
-echo "Result is greater than 10 =  $result"
+	echo "Result is greater than 10 =  $result"
 fi
+
 RESULT:
 Returns echo " Result is less than 10 = 5 "
 ```
@@ -191,13 +192,13 @@ echo "Do you know Bash Programming?"
 read -p "Yes/No?:" Answer
 
 
- case $Answer in
-    Yes|yes|y|Y)
-     echo "That's amazing."
-    ;;
-    No|no|n|N)
-     echo "It's easy. Let's start learning."
-    ;;
+case $Answer in
+   Yes|yes|y|Y)
+	echo "That's amazing."
+   ;;
+   No|no|n|N)
+	echo "It's easy. Let's start learning."
+   ;;
  esac
 
 ```
@@ -209,9 +210,9 @@ read -p "Yes/No?:" Answer
 
 ```
 for i in {1..5}
- do
-  echo "Welcome $i times"
- done
+do
+	echo "Welcome $i times"
+done
 ```         
             
 - Arrays
@@ -232,11 +233,11 @@ for i in {1..5}
    echo "${B[hola]}"
    echo "B has ${#B[@]} elements: ${!B[@]}"
 
-for i in ${!B[@]} ; do echo $i ; done
-   echo "${B[hola]}"
-   echo "B has ${#B[@]} elements: ${!B[@]}"
+   for i in ${!B[@]} ; do echo $i ; done
+  	echo "${B[hola]}"
+   	echo "B has ${#B[@]} elements: ${!B[@]}"
 
-for i in ${!B[@]} ; do echo $i ; done
+   for i in ${!B[@]} ; do echo $i ; done
 
 ```
 
@@ -286,7 +287,7 @@ Read the first line from a file and put it in a variable
 
 Search all files on  a folder in one line.
 
-         ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
+	ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
 
 
 ```
