@@ -12,7 +12,9 @@ The variables in bash are global by default and accessible from anywhere, includ
 
 	var1=1
 	var2=1
+
      change() {
+
         echo Inside function
         echo Variable 1 is: $var1
         echo Variable 2 is: $var2
@@ -48,18 +50,18 @@ Add this to your code and see how it works!
 
 ```
  f 1 2 3
-
  f "1 1" "2 2" "3 3"
   f() {
    local i
      echo "numparams: ${#@}"
-  for i in $@ ; do
-   echo "p: $i"
-  done
-   echo "----"
-  for i in "$@" ; do
-   echo "p: $i"
-  done
+
+	for i in $@ ; do
+		cho "p: $i"
+  	done
+   		echo "----"
+ 	 for i in "$@" ; do
+	   echo "p: $i"
+	  done
 }
 ```
 
@@ -96,6 +98,7 @@ print_something Jupiter
         if (( condition/s )) ; then ; command(s) ; fi
 
 ### 2.3.2 Case
+
         switch (c) {
         case 1: return 10;
         case 2: return 20;
@@ -164,18 +167,18 @@ B=3
 
 result=$(( A + B + 0))
 
- if [ $result =  0 ]
-  then
-   echo "Result A + B equals 0"
- elif [ $result < 10 ]
-  then
-   echo "Result is less than 10  = $result"
- elif [ $result > 10 ]
-  then
-   echo "Result is greater than 10 =  $result"
- fi
- RESULT:
- Returns echo " Result is less than 10 = 5 "
+if [ $result =  0 ]
+then
+echo "Result A + B equals 0"
+elif [ $result < 10 ]
+then
+echo "Result is less than 10  = $result"
+elif [ $result > 10 ]
+then
+echo "Result is greater than 10 =  $result"
+fi
+RESULT:
+Returns echo " Result is less than 10 = 5 "
 ```
 
 ### 3.2.2. Switch or Case
@@ -240,20 +243,30 @@ for i in ${!B[@]} ; do echo $i ; done
 ### 3.2.3. Sample snippets
 
 
-[compareStrings.sh](Tutorial/compareStrings.sh)
-Tutorial/Fifth.sh
-Tutorial/filename.sh
-Tutorial/FourthStep.sh
-Tutorial/Introduction.sh
-Tutorial/MyFunction.sh
-Tutorial/OpenAURL.sh
-Tutorial/README.md
-Tutorial/SecondStep.sh
-Tutorial/seventh.sh
-Tutorial/sixth.sh
-Tutorial/switch.sh
-Tutorial/ThirdStep.sh
 
+- [Introduction.sh](Introduction.sh)
+- [exercici.sh](exercici.sh)
+- [example1.sh](example1.sh)
+
+- [FirstStep.sh](FirstStep.sh)
+- [SecondStep.sh](SecondStep.sh)
+- [ThirdStep.sh](ThirdStep.sh)
+- [FourthStep.sh](FourthStep.sh)
+- [Fifth.sh](Fifth.sh)
+- [sixth.sh](sixth.sh)
+- [seventh.sh](seventh.sh)
+
+
+# Syntax
+
+- [arrays.sh](arrays.sh)
+- [compareStrings.sh](compareStrings.sh)
+- [exerciceParameters.sh](exerciceParameters.sh)
+- [filename.sh](filename.sh)
+- [isdirectory.sh](isdirectory.sh)
+- [MyFunction.sh](MyFunction.sh)
+- [RepasParameters.sh](RepasParameters.sh)
+- [switch.sh](switch.sh)
 
 # 4. One liners
 
