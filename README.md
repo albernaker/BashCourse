@@ -111,7 +111,7 @@ print_something Jupiter
         *) return 0 ;;
         esac
 
-### 2.3.3 For
+### 2.3.3For
 
 
  A 'for loop' is a bash programming language statement which allows code to be repeatedly executed.
@@ -159,7 +159,7 @@ Now you can start programing your code to hack NASA!!
 
 Syntax  What it is    When to use
 
-Examples
+#### Examples
 
 ```
 A=2
@@ -184,7 +184,7 @@ Returns echo " Result is less than 10 = 5 "
 
 ### 3.2.2. Switch or Case
 
-Examples
+#### Examples
 
 ```
 echo "Do you know Bash Programming?"
@@ -203,10 +203,10 @@ case $Answer in
 
 ```
 
-- For Syntax
+- ### For Syntax
 
 
- Examples
+ #### Examples
 
 ```
 for i in {1..5}
@@ -215,7 +215,7 @@ do
 done
 ```         
             
-- Arrays
+- ### Arrays
 
 
 ```
@@ -223,7 +223,7 @@ done
 
 ```
 
-- Associative arrays
+-#### Associative arrays
 
 ```
    declare -A B
@@ -258,7 +258,7 @@ done
 - [seventh.sh](seventh.sh)
 
 
-# Syntax
+#### Syntax
 
 - [arrays.sh](arrays.sh)
 - [compareStrings.sh](compareStrings.sh)
