@@ -250,15 +250,21 @@ read -p "Yes/No?:" Answer
 
 An eg. that we want to search all files on  a folder in one line. 
 
-## 4.2.
+	 ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
 
-example.
+Generate a sequence of numbers
 
-```
-	ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
-```
+	for i in {1..10};do echo $i;done
 
-[compareStrings.sh](Tutorial/compareStrings.sh)
+Append a string to a file
+
+	echo "foo bar baz" >> file
+
+Read the first line from a file and put it in a variable
+
+	read -r line < file
+
+
 
 ```
 Tutorial/compareStrings.sh
