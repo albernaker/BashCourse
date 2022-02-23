@@ -247,11 +247,6 @@ read -p "Yes/No?:" Answer
 # 4. One liners
 
 ## 4.1.
-
-An eg. that we want to search all files on  a folder in one line. 
-
-	 ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
-
 Generate a sequence of numbers
 
 	for i in {1..10};do echo $i;done
@@ -264,6 +259,10 @@ Read the first line from a file and put it in a variable
 
 	read -r line < file
 
+
+Search all files on  a folder in one line.
+
+         ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
 
 
 ```
