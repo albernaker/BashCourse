@@ -7,7 +7,7 @@ Remember to execute a script
 
 # 3.1. Execute a script
 
-If you want to create a script you have to writh in shell, vim (or ur favorite editor) and the name of the script and ".sh" to give it the extension
+If you want to create a script you have to writh in shell, vim (or your favorite editor) and the name of the script and ".sh" to give it the extension
 
 ```
 -  vim nameofthescript.sh
