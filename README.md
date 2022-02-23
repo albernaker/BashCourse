@@ -203,7 +203,7 @@ case $Answer in
 
 ```
 
-- ### For Syntax
+### For Syntax
 
 
  #### Examples
@@ -215,7 +215,7 @@ do
 done
 ```         
             
-- ### Arrays
+### Arrays
 
 
 ```
@@ -223,7 +223,7 @@ done
 
 ```
 
--#### Associative arrays
+#### Associative arrays
 
 ```
    declare -A B
@@ -271,7 +271,8 @@ done
 
 # 4. One liners
 
-## 4.1.
+## 4.1.1.Examples
+
 Generate a sequence of numbers
 
 	for i in {1..10};do echo $i;done
