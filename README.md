@@ -111,7 +111,7 @@ case in $c
  *) return 0 ;;
 esac
 
-### 2.3.3For
+### 2.3.3 For
 
 
  A 'for loop' is a bash programming language statement which allows code to be repeatedly executed.
