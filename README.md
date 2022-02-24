@@ -92,10 +92,10 @@ print_something Jupiter
 ## 2.3. Flow control (if/for/case)
 ### 2.3.1. If
 
-if command ; then ; command(s) ; fi
-if [ condition ] ; then ; command(s) ; fi
-if [[ condition/s ]] ; then ; command(s) ; fi
-if (( condition/s )) ; then ; command(s) ; fi
+	if command ; then ; command(s) ; fi
+	if [ condition ] ; then ; command(s) ; fi
+	if [[ condition/s ]] ; then ; command(s) ; fi
+	if (( condition/s )) ; then ; command(s) ; fi
 
 ### 2.3.2 Case
 
@@ -313,7 +313,7 @@ Tutorial/ThirdStep.sh
 - [Page 2 - Udemy - ](https://www.udemy.com/course/bash-scripting/)
 - [Page 3 - Linux - ](https://www.linux.com/training-tutorials/writing-simple-bash-script/)
 - [Page 4 - Bioinf - ](https://bioinf.comav.upv.es/courses/unix/scripts_bash.html)
-- [Page 5](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
-- [Page 6](https://www.hostinger.es/tutoriales/bash-script-linux)
-- [Page 7](https://www.linux.com/training-tutorials/writing-simple-bash-script/)
+- [Page 5 - Linuxconfig - ](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
+- [Page 6 - hostinger - ](https://www.hostinger.es/tutoriales/bash-script-linux)
+- [Page 7 - linux - ](https://www.linux.com/training-tutorials/writing-simple-bash-script/)
                     
