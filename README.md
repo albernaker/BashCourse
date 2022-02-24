@@ -99,17 +99,17 @@ print_something Jupiter
 
 ### 2.3.2 Case
 
-switch (c) {
- case 1: return 10;
- case 2: return 20;
- default: return 0;
-}
+	switch (c) {
+	 case 1: return 10;
+	 case 2: return 20;
+	 default: return 0;
+	}
 
-case in $c
- 1) return 10 ;;
- 2) return 20 ;;
- *) return 0 ;;
-esac
+	case in $c
+	 1) return 10 ;;
+	 2) return 20 ;;
+	 *) return 0 ;;
+	esac
 
 ### 2.3.3 For
 
