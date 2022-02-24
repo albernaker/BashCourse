@@ -92,24 +92,24 @@ print_something Jupiter
 ## 2.3. Flow control (if/for/case)
 ### 2.3.1. If
 
-        if command ; then ; command(s) ; fi
-        if [ condition ] ; then ; command(s) ; fi
-        if [[ condition/s ]] ; then ; command(s) ; fi
-        if (( condition/s )) ; then ; command(s) ; fi
+if command ; then ; command(s) ; fi
+if [ condition ] ; then ; command(s) ; fi
+if [[ condition/s ]] ; then ; command(s) ; fi
+if (( condition/s )) ; then ; command(s) ; fi
 
 ### 2.3.2 Case
 
-        switch (c) {
-        case 1: return 10;
-        case 2: return 20;
-        default: return 0;
-        }
+switch (c) {
+ case 1: return 10;
+ case 2: return 20;
+ default: return 0;
+}
 
-        case in $c
-        1) return 10 ;;
-        2) return 20 ;;
-        *) return 0 ;;
-        esac
+case in $c
+ 1) return 10 ;;
+ 2) return 20 ;;
+ *) return 0 ;;
+esac
 
 ### 2.3.3For
 
@@ -309,11 +309,11 @@ Tutorial/ThirdStep.sh
 
 # 5. References
 
-[Page 1](https://www.pluralsight.com/courses/bash-shell-scripting?aid=7010a000002BWqGAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=EMEA_Dynamic&utm_content=&gclid=EAIaIQobChMIipadp_709QIVweJ3Ch2yfQziEAAYASAAEgKnmvD_BwE)
-[Page 2](https://www.udemy.com/course/bash-scripting/)
-[Page 3](https://www.linux.com/training-tutorials/writing-simple-bash-script/)
-[Page 4](https://bioinf.comav.upv.es/courses/unix/scripts_bash.html)
-[Page 5](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
-[Page 6](https://www.hostinger.es/tutoriales/bash-script-linux)
-[Page 7](https://www.linux.com/training-tutorials/writing-simple-bash-script/)
+- [Page 1 - PluralSlight - ](https://www.pluralsight.com/courses/bash-shell-scripting?aid=7010a000002BWqGAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=EMEA_Dynamic&utm_content=&gclid=EAIaIQobChMIipadp_709QIVweJ3Ch2yfQziEAAYASAAEgKnmvD_BwE)
+- [Page 2 - Udemy - ](https://www.udemy.com/course/bash-scripting/)
+- [Page 3 - Linux - ](https://www.linux.com/training-tutorials/writing-simple-bash-script/)
+- [Page 4 - Bioinf - ](https://bioinf.comav.upv.es/courses/unix/scripts_bash.html)
+- [Page 5](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
+- [Page 6](https://www.hostinger.es/tutoriales/bash-script-linux)
+- [Page 7](https://www.linux.com/training-tutorials/writing-simple-bash-script/)
                     
