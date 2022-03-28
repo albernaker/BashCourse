@@ -307,7 +307,36 @@ Tutorial/switch.sh
 Tutorial/ThirdStep.sh
 ```
 
-# 5. References
+# 5. Exercises
+
+## 5.1. Simple
+
+ todo/fixme
+
+
+## 5.2. Multi-process
+
+### 5.2.1. One-pass read
+
+In one pass, read one file, e.g. file.txt, and do:
+
+ - MD5, SHA1, SHA256 hashes, compress the file to file.txt.zstd
+
+Hint:
+
+ - Use 'tee' and process substitution (e.g. >(command) )
+
+
+### 5.2.1. One-pass read
+
+Download Ubuntu 20.04 and 21.04, in parallel, wait for the download jobs, and then compress in parallel the ISO's to $NAME.zstd
+
+Hint:
+
+ - Use background processes (&) and process synchronization ('wait')
+
+
+# 6. References
 
 - [Page 1 - PluralSlight - ](https://www.pluralsight.com/courses/bash-shell-scripting?aid=7010a000002BWqGAAW&promo=&utm_source=non_branded&utm_medium=digital_paid_search_google&utm_campaign=EMEA_Dynamic&utm_content=&gclid=EAIaIQobChMIipadp_709QIVweJ3Ch2yfQziEAAYASAAEgKnmvD_BwE)
 - [Page 2 - Udemy - ](https://www.udemy.com/course/bash-scripting/)
