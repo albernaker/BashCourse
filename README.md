@@ -313,6 +313,56 @@ Tutorial/ThirdStep.sh
 
  todo/fixme
 
+### 5.1.1. Simple function mapping
+
+
+Hint:
+
+```
+foo() { echo foo ; }
+bar() { echo bar ; }
+
+# main
+
+case "$1" in
+foo|bar) "$@" ;;
+*) echo "command \"$1\" not available" ;;
+esac
+```
+
+```
+case "$1" in
+md5sum|sha1sum|sha256) $1 "$2" ;;
+*) echo "error..."
+esac
+```
+
+### 5.1.2. Operand-based function mapping
+
+Hint:
+
+```
+
+sum() { echo $(($1 + $2)) ; }
+mul() { echo $(($1 * $2)) ; }
+map() {
+	local i op=$1 param=$(($2 + 0))
+	for ((i = 0; i < 10; i++)) ; do
+		$op $param $i
+	done
+}
+
+# main
+
+case "$1"
+sum|mul) map $1 $2 ;;
+*)) echo "error..." ;;
+esac
+
+# Example: script.sh sum 3
+```
+
+
 
 ## 5.2. Multi-process
 
@@ -327,14 +377,13 @@ Hint:
  - Use 'tee' and process substitution (e.g. >(command) )
 
 
-### 5.2.1. One-pass read
+### 5.2.2. One-pass read
 
 Download Ubuntu 20.04 and 21.04, in parallel, wait for the download jobs, and then compress in parallel the ISO's to $NAME.zstd
 
 Hint:
 
  - Use background processes (&) and process synchronization ('wait')
-
 
 # 6. References
 
