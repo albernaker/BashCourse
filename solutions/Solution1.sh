@@ -2,28 +2,6 @@
 
 PK="gzip"
 
-foo() {
-	input="file.txt"
-	inputWrite="filesolution.txt"
-	pkg="zstd"
-
-	if [ -f "$inputWrite" ]; then
-		rm -r $inputWrite
-	fi
-
-	if sudo apt-get -qq install -y $pkg; then
-	    echo "Successfully installed $pkg"
-	else
-	    echo "Error installing, the package is already installed $pkg"
-	fi
-
-	while IFS= read -r line; do echo -n $line | sha256sum |  md5sum | sha1sum |& tee -a $inputWrite >(zstd $inputWrite); done < $input
-
-	sha1sum <$input
-	sha256sum <$input
-	md5sum <$input
-}
-
 ncpus() {
 	local n=$(cat /proc/cpuinfo | grep processor | wc -l)
 	echo $((n + 0 == 0 ? 1 : n))
