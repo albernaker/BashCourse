@@ -237,8 +237,16 @@ done
   	echo "${B[hola]}"
    	echo "B has ${#B[@]} elements: ${!B[@]}"
 
-   for i in ${!B[@]} ; do echo $i ; done
+   for i in "${!B[@]}" ; do echo $i ; done
 
+	Another example :
+
+	declare -A arrayAssos
+
+	arrayAssos[fruit]=mango
+	arrayAssos[bird]=Cockatail
+	arrayAssos[flower]=Rose
+	arrayAssos[animal]=Tiger
 ```
 
 ### 3.2.3. Sample snippets
