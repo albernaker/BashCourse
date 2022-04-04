@@ -148,7 +148,7 @@ When you are editing the script you have to say that you're scripting in bash so
 - #!/bin/bash
 
 
-Now you can start programing your code to hack NASA!!
+Now you can start programming your code to hack NASA!!
 
 
 
@@ -217,21 +217,47 @@ done
             
 ### Arrays
 
+#### For Each Element in Array
+
+-> In the following script, we take an array arr with three items, and iterate over the items of this array using For loop with for-each syntax.
 
 ```
-   A[3]=hola
+arr=( "apple" "banana" "cherry" )
+ 
+for item in "${arr[@]}"
+do
+    echo $item
+done
 
 ```
 
-#### Associative arrays
+#### Iterate over Array Items using For Loop and Index
+  
+-> We take index and increment it in for loop until array length. During each iteration of the loop, we use the index to access the item in array.
 
+```
+arr=( "apple" "banana" "cherry" )
+ 
+for (( i=0; i<${#arr[@]}; i++ ));
+do
+    echo ${arr[$i]}
+done
+```
+
+### Associative arrays
+
+
+->An array variable is used to store multiple data with index and the value of each array element is accessed by the corresponding index value of that element.
 ```
    declare -A B
    B[hola]=3
    B[hello]=4
 
+
    echo "${B[hola]}"
    echo "B has ${#B[@]} elements: ${!B[@]}"
+
+->You can access the array indices using ${!B[@]} and the lentgh of the array using ${#B[@]}.
 
    for i in ${!B[@]} ; do echo $i ; done
   	echo "${B[hola]}"
@@ -239,15 +265,65 @@ done
 
    for i in "${!B[@]}" ; do echo $i ; done
 
-	Another example :
+##### Add new data
 
-	declare -A arrayAssos
+->A new array element can be added easily in the associative array after declaring and initializing the array. 
+
+```
+	echo "${assArray2[@]}"
+	assArray2+=([Mouse]=Logitech)
+	echo "${assArray2[@]}"
+```
+
+##### Remove data 
+```
+	unset assArray2[Monitor]
+	echo ${assArray2[Monitor]}
+```
+
+##### Example Array Assosiative
+
+An associative array can be declared in bash by using the declare keyword and the array elements can be initialized at the time of array declaration or after declaring the array variable.
+
+```	declare -A arrayAssos
 
 	arrayAssos[fruit]=mango
 	arrayAssos[bird]=Cockatail
 	arrayAssos[flower]=Rose
 	arrayAssos[animal]=Tiger
 ```
+
+##### Global / Local declaration
+
+Local variable				Global variable
+It is declared inside the function	It can be declared outside the function anywhere in the program.
+
+
+### Redirections
+
+">" Redirect to a file or stdout
+"<" Input from a file or stdin
+"<<" Append to a file (for stdin append doesn't make sense)
+">>"" Redirect and append to a file (for stdout append doesn't make sense)
+
+#### e.g
+
+Lets try some scripts
+
+```
+ls -l > filename.txt
+```
+This will create the filename.txt and then will add the ls -ls but if you use two ">>" you will add a line without replacing
+
+something like this :
+
+```
+echo hello >> filename.txt
+```
+You should read the ls -l and at the end you should read hello
+
+REMEMBER ONE ">" REPLACE THE TEXT, TWO ">>" ADD A NEW LINE AND ADD THE TEXT
+
 
 ### 3.2.3. Sample snippets
 
