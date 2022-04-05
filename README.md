@@ -257,7 +257,7 @@ done
    echo "${B[hola]}"
    echo "B has ${#B[@]} elements: ${!B[@]}"
 
-->You can access the array indices using ${!B[@]} and the lentgh of the array using ${#B[@]}.
+->You can access the array values using ${!B[@]} and the lentgh of the array using ${#B[@]}.
 
    for i in ${!B[@]} ; do echo $i ; done
   	echo "${B[hola]}"
@@ -295,8 +295,8 @@ An associative array can be declared in bash by using the declare keyword and th
 
 ##### Global / Local declaration
 
-Local variable				Global variable
-It is declared inside the function	It can be declared outside the function anywhere in the program.
+Local variable								Global variable
+It is declared inside the function and only can used in the function	It can be declared outside the function anywhere in the program.
 
 
 ### Redirections
