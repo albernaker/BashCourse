@@ -74,7 +74,7 @@ B=$(($A * 3 + 1))
 
 ## 2.2. Basic Operations
 
-## 1.1. File Operations
+### 2.2.1 File Operations
 <table>
    <tr>
       <td><a href="#a-cat">cat</a></td>
@@ -271,7 +271,7 @@ Example:
 $ touch trick.md
 ```
 
-# 1.2. Text Operations
+### 2.2.2 Text Operations
 
 <table>
     <tr>
@@ -692,7 +692,7 @@ $ wc demo.txt
 ```
 Where `7459` is lines, `15915` is words and `398400` is characters.
 
-## 2.2.1 Functions
+## 2.2.3 Functions
 
 
 A Bash function is essentially a set of commands that can be called numerous times.
