@@ -74,6 +74,35 @@ B=$(($A * 3 + 1))
 
 ## 2.2. Basic Operations
 
+## 1.1. File Operations
+<table>
+   <tr>
+      <td><a href="#a-cat">cat</a></td>
+      <td><a href="#b-chmod">chmod</a></td>
+      <td><a href="#c-chown">chown</a></td>
+      <td><a href="#d-cp">cp</a></td>
+      <td><a href="#e-diff">diff</a></td>
+      <td><a href="#f-file">file</a></td>
+      <td><a href="#g-find">find</a></td>
+      <td><a href="#h-gunzip">gunzip</a></td>
+      <td><a href="#i-gzcat">gzcat</a></td>
+      <td><a href="#j-gzip">gzip</a></td>
+      <td><a href="#k-head">head</a></td>
+   </tr>
+   <tr>
+      <td><a href="#l-lpq">lpq</a></td>
+      <td><a href="#m-lpr">lpr</a></td>
+      <td><a href="#n-lprm">lprm</a></td>
+      <td><a href="#o-ls">ls</a></td>
+      <td><a href="#p-more">more</a></td>
+      <td><a href="#q-mv">mv</a></td>
+      <td><a href="#r-rm">rm</a></td>
+      <td><a href="#s-tail">tail</a></td>
+      <td><a href="#t-touch">touch</a></td>
+   </tr>
+</table>
+
+
 ### a. `cat`
 It can be used for the following purposes under UNIX or Linux.
 * Display text files on screen
