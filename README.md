@@ -250,25 +250,9 @@ $ touch trick.md
 
 ### 2.2.2 Text Operations
 
-<table>
-    <tr>
-      <td><a href="#a-awk">awk</a></td>
-      <td><a href="#b-cut">cut</a></td>
-      <td><a href="#c-echo">echo</a></td>
-      <td><a href="#d-egrep">egrep</a></td>
-      <td><a href="#e-fgrep">fgrep</a></td>
-      <td><a href="#f-fmt">fmt</a></td>
-      <td><a href="#g-grep">grep</a></td>
-      <td><a href="#h-nl">nl</a></td>
-      <td><a href="#i-sed">sed</a></td>
-      <td><a href="#j-sort">sort</a></td>
-   </tr>
-   <tr>
-      <td><a href="#k-tr">tr</a></td>
-      <td><a href="#l-uniq">uniq</a></td>
-      <td><a href="#m-wc">wc</a></td>
-   </tr>
-</table>
+| **awk** | **cut** | **echo** | **egrep** | **fgrep** | **fmt** | **grep** |
+|---------|---------|----------|-----------|-----------|---------|----------|
+| **nl**  | **sed** | **sort** | **tr**    | **uniq**  | **wc**  |          |
 
 ### a. `awk`
 awk is the most useful command for handling text files. It operates on an entire file line by line. By default it uses whitespace to separate the fields. The most common syntax for awk command is
