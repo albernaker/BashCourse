@@ -75,7 +75,7 @@ B=$(($A * 3 + 1))
 ## 2.2. Basic Operations
 
 ### 2.2.1 File Operations
-| [**cat**](#a)  | **chmod** | **chown** | **cp**   | **diff** | **file** | **find** | **gunzip** | **gzcat** | **gzip**  |
+| [**cat**](#d)  | **chmod** | **chown** | **cp**   | **diff** | **file** | **find** | **gunzip** | **gzcat** | **gzip**  |
 |----------|-----------|-----------|----------|----------|----------|----------|------------|-----------|-----------|
 | **head** | **lpq**   | **lpr**   | **lprm** | **ls**   | **more** | **mv**   | **rm**     | **tail**  | **touch** |
 
