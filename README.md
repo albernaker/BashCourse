@@ -1064,8 +1064,9 @@ Hint:
 
 #### Solution
 
+```
 solutions/Solution2.sh
-
+```
 
 ### 5.2.2. One-pass read
 
@@ -1077,7 +1078,9 @@ Hint:
 
 #### Solution
 
+```
 solutions/Solution4.sh
+```
 
 # 6. References
 
