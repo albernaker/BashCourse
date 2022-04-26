@@ -915,9 +915,9 @@ You should read the ls -l and at the end of the line you should read hello
 
 REMEMBER ONE ">" REPLACE THE TEXT, TWO ">>" ADD A NEW LINE AND ADD THE TEXT
 
-###Trap
+### Trap
 
-####Trap to block actions! 
+#### Trap to block actions! 
 
 You can use the trap builtin to handle a user pressing ctrl-c during the execution of a Bash script. e.g. if you need to perform some cleanup functions.
 
@@ -998,11 +998,7 @@ Tutorial/ThirdStep.sh
 
 # 5. Exercises
 
-## 5.1. Simple
-
- todo/fixme
-
-### 5.1.1. Simple function mapping
+### 5.1. Simple function mapping
 
 
 Hint:
