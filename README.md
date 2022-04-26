@@ -1062,6 +1062,11 @@ Hint:
  - Use 'tee' and process substitution (e.g. >(command) )
 
 
+#### Solution
+
+solutions/Solution2.sh
+
+
 ### 5.2.2. One-pass read
 
 Download Ubuntu 20.04 and 21.04, in parallel, wait for the download jobs, and then compress in parallel the ISO's to $NAME.zstd
@@ -1069,6 +1074,10 @@ Download Ubuntu 20.04 and 21.04, in parallel, wait for the download jobs, and th
 Hint:
 
  - Use background processes (&) and process synchronization ('wait')
+
+#### Solution
+
+solutions/Solution4.sh
 
 # 6. References
 
