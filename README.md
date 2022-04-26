@@ -981,19 +981,18 @@ Search all files on  a folder in one line.
 	```
 
 
-(Tutorial/compareStrings.sh)
-(Tutorial/Fifth.sh)
-(Tutorial/filename.sh)
-(Tutorial/FourthStep.sh)
-(Tutorial/Introduction.sh)
-(Tutorial/MyFunction.sh)
-(Tutorial/OpenAURL.sh)
-(Tutorial/README.md)
-(Tutorial/SecondStep.sh)
-(Tutorial/seventh.sh)
-(Tutorial/sixth.sh)
-(Tutorial/switch.sh)
-(Tutorial/ThirdStep.sh)
+[Compare Strings Exercice](Tutorial/compareStrings.sh)
+[Exercice five](Tutorial/Fifth.sh)
+[Exercice FileName](Tutorial/filename.sh)
+[Exercice four](Tutorial/FourthStep.sh)
+[Introduction](Tutorial/Introduction.sh)
+[Exercice fuctions](Tutorial/MyFunction.sh)
+[Open a Url with Bash](Tutorial/OpenAURL.sh)
+[Exercice two](Tutorial/SecondStep.sh)
+[Exercice seven](Tutorial/seventh.sh)
+[Exercice six](Tutorial/sixth.sh)
+[Exercice switch](Tutorial/switch.sh)
+[Exercice three](Tutorial/ThirdStep.sh)
 
 
 # 5. Exercises
@@ -1061,7 +1060,7 @@ Hint:
 
  - Use 'tee' and process substitution (e.g. >(command) )
 
-[Solution](solutions/Solution2.sh)
+[Solution](solutions/Solution4.sh)
 
 
 ### 5.2.2. One-pass read
@@ -1072,7 +1071,7 @@ Hint:
 
  - Use background processes (&) and process synchronization ('wait')
 
-[Solution](solutions/Solution4.sh)
+[Solution](solutions/Solution2.sh)
 
 
 # 6. References
