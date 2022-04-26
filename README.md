@@ -844,14 +844,17 @@ done
 
    echo "${B[hola]}"
    echo "B has ${#B[@]} elements: ${!B[@]}"
+```
 
 ->You can access the array values using ${!B[@]} and the lentgh of the array using ${#B[@]}.
 
+```
    for i in ${!B[@]} ; do echo $i ; done
   	echo "${B[hola]}"
    	echo "B has ${#B[@]} elements: ${!B[@]}"
 
    for i in "${!B[@]}" ; do echo $i ; done
+```
 
 ##### Add new data
 
@@ -864,10 +867,10 @@ done
 ```
 
 ##### Remove data 
-```
+	```
 	unset assArray2[Monitor]
 	echo ${assArray2[Monitor]}
-```
+	```
 
 ##### Example Array Assosiative
 
