@@ -934,29 +934,32 @@ function ctrl_c() {
 
 
 
-- [Introduction.sh](Introduction.sh)
-- [exercici.sh](exercici.sh)
-- [example1.sh](example1.sh)
+- [Introduction.sh](Tutorial/Introduction.sh)
+- [exercici.sh](Tutorial/exercici.sh)
+- [example1.sh](Tutorial/example1.sh)
 
-- [FirstStep.sh](FirstStep.sh)
-- [SecondStep.sh](SecondStep.sh)
-- [ThirdStep.sh](ThirdStep.sh)
-- [FourthStep.sh](FourthStep.sh)
-- [Fifth.sh](Fifth.sh)
-- [sixth.sh](sixth.sh)
-- [seventh.sh](seventh.sh)
-
+- [FirstStep.sh](Tutorial/FirstStep.sh)
+- [SecondStep.sh](Tutorial/SecondStep.sh)
+- [ThirdStep.sh](Tutorial/ThirdStep.sh)
+- [FourthStep.sh](Tutorial/FourthStep.sh)
+- [Fifth.sh](Tutorial/Fifth.sh)
+- [sixth.sh](Tutorial/sixth.sh)
+- [seventh.sh](Tutorial/seventh.sh)
+- [Compare Strings Exercice](Tutorial/compareStrings.sh)
+- [Exercice FileName](Tutorial/filename.sh)
+- [Exercice fuctions](Tutorial/MyFunction.sh)
+- [Oaen a Url with Bash](Tutorial/OpenAURL.sh)
 
 #### Syntax
 
-- [arrays.sh](arrays.sh)
-- [compareStrings.sh](compareStrings.sh)
-- [exerciceParameters.sh](exerciceParameters.sh)
-- [filename.sh](filename.sh)
-- [isdirectory.sh](isdirectory.sh)
-- [MyFunction.sh](MyFunction.sh)
-- [RepasParameters.sh](RepasParameters.sh)
-- [switch.sh](switch.sh)
+- [arrays.sh](Tutorial/arrays.sh)
+- [compareStrings.sh](Tutorial/compareStrings.sh)
+- [exerciceParameters.sh](Tutorial/exerciceParameters.sh)
+- [filename.sh](Tutorial/filename.sh)
+- [isdirectory.sh](Tutorial/isdirectory.sh)
+- [MyFunction.sh](Tutorial/MyFunction.sh)
+- [RepasParameters.sh](Tutorial/RepasParameters.sh)
+- [switch.sh](Tutorial/switch.sh)
 
 # 4. One liners
 
@@ -980,20 +983,20 @@ Search all files on  a folder in one line.
 	ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
 	```
 
-
-[Compare Strings Exercice](Tutorial/compareStrings.sh)
-[Exercice five](Tutorial/Fifth.sh)
-[Exercice FileName](Tutorial/filename.sh)
-[Exercice four](Tutorial/FourthStep.sh)
-[Introduction](Tutorial/Introduction.sh)
-[Exercice fuctions](Tutorial/MyFunction.sh)
-[Open a Url with Bash](Tutorial/OpenAURL.sh)
-[Exercice two](Tutorial/SecondStep.sh)
-[Exercice seven](Tutorial/seventh.sh)
-[Exercice six](Tutorial/sixth.sh)
-[Exercice switch](Tutorial/switch.sh)
-[Exercice three](Tutorial/ThirdStep.sh)
-
+```
+compareStrings.sh
+Fifth.sh
+filename.sh
+FourthStep.sh
+Introduction.sh
+MyFunction.sh
+OpenAURL.sh
+SecondStep.sh
+seventh.sh
+sixth.sh
+switch.sh
+ThirdStep.sh
+```
 
 # 5. Exercises
 
