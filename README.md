@@ -1079,6 +1079,8 @@ Hint:
 #### Solution
 
 ```
+Tutorial/ThirdStep.sh
+
 solutions/Solution4.sh
 ```
 
