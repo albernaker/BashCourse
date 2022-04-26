@@ -1078,9 +1078,9 @@ Hint:
 
 #### Solution
 
-```
-(solutions/Solution4.sh)
-```
+
+[Solution](solutions/Solution4.sh)
+
 
 # 6. References
 
