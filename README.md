@@ -963,38 +963,38 @@ function ctrl_c() {
 ## 4.1.1.Examples
 
 Generate a sequence of numbers
-
+	```
 	for i in {1..10};do echo $i;done
-
+	```
 Append a string to a file
-
+	```
 	echo "foo bar baz" >> file
-
+	```
 Read the first line from a file and put it in a variable
-
+	```
 	read -r line < file
-
+	```
 
 Search all files on  a folder in one line.
-
+	```
 	ls -1 Tutorial/ | while read i ; do echo Tutorial/$i ; done
+	```
 
 
-```
-Tutorial/compareStrings.sh
-Tutorial/Fifth.sh
-Tutorial/filename.sh
-Tutorial/FourthStep.sh
-Tutorial/Introduction.sh
-Tutorial/MyFunction.sh
-Tutorial/OpenAURL.sh
-Tutorial/README.md
-Tutorial/SecondStep.sh
-Tutorial/seventh.sh
-Tutorial/sixth.sh
-Tutorial/switch.sh
-Tutorial/ThirdStep.sh
-```
+(Tutorial/compareStrings.sh)
+(Tutorial/Fifth.sh)
+(Tutorial/filename.sh)
+(Tutorial/FourthStep.sh)
+(Tutorial/Introduction.sh)
+(Tutorial/MyFunction.sh)
+(Tutorial/OpenAURL.sh)
+(Tutorial/README.md)
+(Tutorial/SecondStep.sh)
+(Tutorial/seventh.sh)
+(Tutorial/sixth.sh)
+(Tutorial/switch.sh)
+(Tutorial/ThirdStep.sh)
+
 
 # 5. Exercises
 
@@ -1061,12 +1061,8 @@ Hint:
 
  - Use 'tee' and process substitution (e.g. >(command) )
 
+[Solution](solutions/Solution2.sh)
 
-#### Solution
-
-```
-solutions/Solution2.sh
-```
 
 ### 5.2.2. One-pass read
 
@@ -1075,9 +1071,6 @@ Download Ubuntu 20.04 and 21.04, in parallel, wait for the download jobs, and th
 Hint:
 
  - Use background processes (&) and process synchronization ('wait')
-
-#### Solution
-
 
 [Solution](solutions/Solution4.sh)
 
