@@ -1,6 +1,5 @@
 # Learn Bash fast!
 ### Basic Bash Commands
-
 ##### Navigating the file systems
 -------------------------
 ###### cd 
@@ -62,8 +61,6 @@ The cp command is a command line utility that copy files or directories from one
   
 ### Basic Bash Scripts
 
-##### Variables and command substitution
----------------------
 
 ###### Create a script
 1) Create a new text file with a .sh extension.
@@ -76,6 +73,9 @@ This is necessary for the “make it executable” part.
 5) Run it whenever you need!
 
 Now, I run ./deploy.sh and boom. Done.
+
+##### Variables and command substitution
+---------------------
 
 ###### How to create a variable
 A variable in bash can contain a number, a character, a string of characters. You have no need to declare a variable, just assigning a value to its reference will create it.
