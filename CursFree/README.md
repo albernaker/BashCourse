@@ -65,9 +65,9 @@ The cp command is a command line utility that copy files or directories from one
 ##### Variables and command substitution
 ---------------------
 
-###### Create an script
+###### Create a script
 1) Create a new text file with a .sh extension.
-I created a new file called deploy.sh for my website.
+I created a new file called deploy.sh.
 
 2) Add #!/bin/bash to the top of it.
 This is necessary for the “make it executable” part.
@@ -131,11 +131,86 @@ Executing
 
     ./script.sh Hello World
 
-Will make
+This will make
 
     $0 = ./script.sh
     $1 = Hello
     $2 = World
+    
+### Conditional, Loops, Cases
+    
+##### Conditionals
+------------------------------------------------------
+If statements (and, closely related, case statements) allow us to make decisions in our Bash scripts. 
+
+    if [ <some test> ]
+    then
+    <commands>
+    fi
+    
+If you want to know operands go to the following link, it has a lot of operands that you will use usually.
+- https://kapeli.com/cheat_sheets/Bash_Test_Operators.docset/Contents/Resources/Documents/index
+
+##### Loop or for
+The for loop iterates over a list of items and performs the given set of commands.
+
+The Bash for loop takes the following form:
+
+    for item in [LIST]
+    do
+      [COMMANDS]
+    done
+
+##### Case
+The Bash implementation of case tries to match an expression with one of the clauses.
+
+he generic form of the case statement is this:
+
+        case expression in 
+              pattern-1)
+                statement 
+                ;;
+              pattern-2) 
+                statement
+                ;;
+              pattern-N) 
+                statement 
+                ;;
+              *) 
+                statement 
+                ;; 
+            esac
+            
+A example :
+
+        
+        #!/bin/bash
+            echo "Enter name of a month"
+            read month
+            case $month in
+              February)
+                echo "28/29 days in $month"
+                ;;
+                
+              April | June | September | November)
+                echo "30 days in $month"
+                ;;
+                
+              January | March | May | July | August | October | December)
+                echo "31 days in $month"
+                ;;
+                
+              *)
+                echo "Unknown month: $month"
+                ;;
+            esac
+
+
+
+
+
+
+
 
     
 
