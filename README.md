@@ -1,5 +1,7 @@
 # Bash Course
 
+[TOC]
+
 # 1. Introduction
 
 Hello user! I'm here to talk about my bash course, here i will explain some scripts to learn about bash.
